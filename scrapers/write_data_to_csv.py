@@ -1,7 +1,7 @@
 import csv
 
 
-def write_rows_to_csv(path_to_csv, row) -> None:
+def write_row_to_csv(path_to_csv, row) -> None:
     """
     :param path_to_csv: Path to csv file
     :param row: row to write
