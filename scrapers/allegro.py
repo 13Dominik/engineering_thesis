@@ -16,7 +16,7 @@ from validate_link import check_if_article_in_base, check_has_proper_end
 To reduce imbalance in dataset choose only reviews with specific score. 
 i.e. [1,2,3] -> to dataset will be only added reviews with score 1,2 or 3.
 """
-RATINGS_TO_DOWNLOAD = [1, 2, 3, 4, 5]
+RATINGS_TO_DOWNLOAD = [1, 2, 3, 4]
 def delay(a, b) -> None:
     """
     Random delay (2 - 8 [s]) between interactions on website to mimic human delay
@@ -70,7 +70,7 @@ if __name__ == "__main__":
         else:
             continue
         row.append(title.text)  # title of auction
-        write_row_to_csv('../data/allegro/supplements/data.csv', row)
+        write_row_to_csv('../data/allegro/rtvagd/data.csv', row)
 
     # Go to new loaded reviews in next iteration
     max_reviews = len(reviews) - 2
@@ -95,7 +95,7 @@ if __name__ == "__main__":
                 else:
                     continue
                 row.append(title.text)  # title of auction
-                write_row_to_csv('../data/allegro/supplements/data.csv', row)
+                write_row_to_csv('../data/allegro/rtvagd/data.csv', row)
             # Go only for new loaded reviews
             max_reviews = len(reviews)
             max_ratings = len(ratings)

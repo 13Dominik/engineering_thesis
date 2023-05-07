@@ -22,7 +22,7 @@ def check_if_article_in_base(title: str) -> None:
     :return: None if title no in database, or raise exception if so
     """
     used_articles = []
-    with open('../data/allegro/supplements/used_articles.csv', 'r') as file:
+    with open('../data/allegro/rtvagd/used_articles.csv', 'r') as file:
         reader = csv.reader(file, delimiter=',')
         for line in reader:
             used_articles.append(line)
@@ -30,7 +30,7 @@ def check_if_article_in_base(title: str) -> None:
     if [title] in used_articles:
         raise ProductInDatabase
 
-    with open('../data/allegro/supplements/used_articles.csv', 'a') as file:
+    with open('../data/allegro/rtvagd/used_articles.csv', 'a') as file:
         writer = csv.writer(file)
         writer.writerow([title])
 

@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-url = 'https://allegro.pl/kategoria/suplementy-i-odzywki-spalacze-tluszczu-19664?string=spalacz%20t%C5%82uszczu&order=qd'
+url = 'https://allegro.pl/listing?string=klimatyzacja&order=qd'
 options = webdriver.ChromeOptions()
 options.add_argument("--incognito")
 options.add_argument("--start-maximized")
