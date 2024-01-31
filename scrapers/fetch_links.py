@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-url = 'https://allegro.pl/listing?string=klimatyzacja&order=qd'
+url = 'https://allegro.pl/listing?string=suszarka&order=qd'
 options = webdriver.ChromeOptions()
 options.add_argument("--incognito")
 options.add_argument("--start-maximized")

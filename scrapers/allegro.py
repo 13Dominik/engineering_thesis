@@ -34,10 +34,10 @@ if __name__ == "__main__":
     link = check_has_proper_end(link)
     # Adding options to mimic real user
     options = webdriver.ChromeOptions()
-    options.add_argument("--incognito")
+    #options.add_argument("--incognito")
     options.add_argument("--start-maximized")
     options.add_argument("--disable-extensions")
-    options.add_argument("--disable-notifications")
+    #options.add_argument("--disable-notifications")
     driver = webdriver.Chrome(options=options)
 
     # open page
